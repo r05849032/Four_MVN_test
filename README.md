@@ -41,6 +41,7 @@ prop.reject(InputData, gene.no = 4, replicate.no = 100,
 
 ## Value
 A list containing the following components:
+
 | Name      | Description |
 | :-------- | :---------- |
 | `P.value` | A matrix containing p-values. The 4 columns are the p-values under the Energy, HZ, Royston, and Mardia test, respectively. The number of rows is equal to replicate.no. |
@@ -72,6 +73,4 @@ output
 
 The output is
 
-![example_code_output](https://i.imgur.com/9jO8kbi.png =520x280)
-
-
+<img align="left" width="520" height="280" src="https://i.imgur.com/9jO8kbi.png">
