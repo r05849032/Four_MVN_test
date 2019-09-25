@@ -66,6 +66,7 @@ Székely, G. J. and Rizzo, M. L. (2013) Energy statistics: a class of statistics
 library(MVN)
 library(energy)
 
+
 # Load the example data.
 load("ExampleData.RData")
 head(Data[,1:6])
@@ -79,6 +80,7 @@ head(Data[,1:6])
 
 dim(Data)
 ## [1]  30 100
+
 
 # Test the normality by using the four multivariate tests.
 output = Prop.reject(Data, gene.no = 4, replicate.no = 10, significance.level = 0.05)
