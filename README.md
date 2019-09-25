@@ -25,15 +25,53 @@ install_version("energy", version = "1.7-2",
 
 ## Usage
 ```r
-Prop.reject(InputData, gene.no = 4, replicate.no = 100, 
+prop.reject(InputData, gene.no = 4, replicate.no = 100, 
     significance.level = 0.05, random.seed = 20190717) 
 ```
 
 ## Arguments
-| InputData | The original IxJ data matrix, where I is the number of samples  and J is the number of genes. |
-| gene.no | The number of genes that will be randomly selected to form a set  for multivariate normality test. The default is 4. |
-| replicate.no | The number of replications. In each replication, a number of  “gene.no” genes will be randomly selected for the normality test. The default is 100. |
-| significance.level | The significance level. The default is 0.05. |
-| random.seed | The seed used when randomly select “gene.no” genes. The default  is 20190717. |
+| Name      | Description |
+| :-------- | :---------- |
+| `InputData` | The original *I*x*J* data matrix, where *I* is the number of samples and *J* is the number of genes. |
+| `gene.no` | The number of genes that will be randomly selected to form a set  for multivariate normality test. The default is 4. |
+| `replicate.no` | The number of replications. In each replication, a number of  “gene.no” genes will be randomly selected for the normality test. The default is 100. |
+| `significance.level` | The significance level. The default is 0.05. |
+| `random.seed` | The seed used when randomly select “gene.no” genes. The default  is 20190717. |
 
-<div style="text-align:center">hgfh</div>
+
+## Value
+A list containing the following components:
+| Name      | Description |
+| :-------- | :---------- |
+| `P.value` | A matrix containing p-values. The 4 columns are the p-values under the Energy, HZ, Royston, and Mardia test, respectively. The number of rows is equal to replicate.no. |
+| `Proportion.table` | A matrix. The rejection rate of “Mardia test”, “HZ test”, “Royston test” and “Energy test” in the setting replication times. |
+
+## Authors
+Chi-Hsuan Ho and Yu-Jyun Huang (National Taiwan University), September 20, 2019.
+
+## References
+Korkmaz, S., Goksuluk, D., and Zararsiz, G. (2014) MVN: An R package for assessing multivariate normality. The R Journal, 6, 151-162. 
+
+Székely, G. J. and Rizzo, M. L. (2013) Energy statistics: a class of statistics based on distances. Journal of Statistical Planning and Inference, 143, 1249-1272.
+
+## Examples
+```r
+# Load the required packages.
+library(MVN)
+library(energy)
+
+# Load the example data.
+load("ExampleData.Rdata")
+head(Data[,1:6])
+dim(Data)
+
+# Test the normality by using the four multivariate tests.
+output = Nonnormal(Data, genenumber = 4, times = 10, sig = 0.05)
+output
+```
+
+The output is
+
+![example_code_output](https://i.imgur.com/9jO8kbi.png =520x280)
+
+
