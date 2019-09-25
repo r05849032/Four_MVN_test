@@ -8,7 +8,7 @@
 ## Preinstallation
 To use `Prop.reject()` for testing the normality, the MVN and energy package with specific version should be installed beforehand.
 
-Install older package versions by using `devtools`
+Install older package versions by using the `devtools` package.
 ```r
 library(devtools)
 ```
