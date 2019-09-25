@@ -3,10 +3,10 @@
 [![MVN_Package_Badge](https://img.shields.io/badge/MVN-5.0-brightgreen.svg)](https://www.rdocumentation.org/packages/MVN/versions/5.1)  [![energy_Package_Badge](https://img.shields.io/badge/energy-1.7--2-brightgreen)](https://www.rdocumentation.org/packages/energy/versions/1.7-2) [![Code_Size_Badge](https://img.shields.io/github/languages/code-size/r05849032/NTU_submit.paper.svg)](https://github.com/r05849032/NTU_submit.paper)
 
 ## Description
-prop.reject calculates the proportion of rejection when testing the multivariate normality distributional assumption based on the Energy, Henze-Zirkler (HZ), Royston, and Mardia test. The Energy test is conducted with the function mvnorm.etest in the R package energy (Székely and Rizzo, 2013). The other three tests are conducted with the function mvn in the R package MVN (Korkmaz et al., 2014). 
+`prop.reject()` calculates the proportion of rejection when testing the multivariate normality distributional assumption based on the Energy, Henze-Zirkler (HZ), Royston, and Mardia test. The Energy test is conducted with the function mvnorm.etest in the R package energy (Székely and Rizzo, 2013). The other three tests are conducted with the function mvn in the R package MVN (Korkmaz et al., 2014). 
 
 ## Preinstallation
-To use the prop.reject function for testing the normality, the MVN and energy package with specific version should be installed beforehand.
+To use the `prop.reject()` for testing the normality, the MVN and energy package with specific version should be installed beforehand.
 
 Install older package versions by using `devtools`
 ```r
@@ -49,6 +49,11 @@ A list containing the following components:
 
 ## Authors
 Chi-Hsuan Ho and Yu-Jyun Huang (National Taiwan University), September 20, 2019.
+
+## Citation
+To cite `prop.reject()` in publications, use: 
+
+    Chi-Hsuan Ho, Yu-Jyun Huang, & Chuhsing Kate Hsiao. (2019) The misuse of normality assumption in gene-set analysis. Submitted.
 
 ## References
 Korkmaz, S., Goksuluk, D., and Zararsiz, G. (2014) MVN: An R package for assessing multivariate normality. The R Journal, 6, 151-162. 
