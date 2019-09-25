@@ -6,7 +6,7 @@
 `prop.reject()` calculates the proportion of rejection when testing the multivariate normality distributional assumption based on the Energy, Henze-Zirkler (HZ), Royston, and Mardia test. The Energy test is conducted with the function mvnorm.etest in the R package energy (Székely and Rizzo, 2013). The other three tests are conducted with the function mvn in the R package MVN (Korkmaz et al., 2014). 
 
 ## Preinstallation
-To use the `prop.reject()` for testing the normality, the MVN and energy package with specific version should be installed beforehand.
+To use `prop.reject()` for testing the normality, the MVN and energy package with specific version should be installed beforehand.
 
 Install older package versions by using `devtools`
 ```r
@@ -53,7 +53,7 @@ Chi-Hsuan Ho and Yu-Jyun Huang (National Taiwan University), September 20, 2019.
 ## Citation
 To cite `prop.reject()` in publications, use: 
 
-    Chi-Hsuan Ho, Yu-Jyun Huang, & Chuhsing Kate Hsiao. (2019) The misuse of normality assumption in gene-set analysis. Submitted.
+Chi-Hsuan Ho, Yu-Jyun Huang, & Chuhsing Kate Hsiao. (2019) The misuse of normality assumption in gene-set analysis. Submitted.
 
 ## References
 Korkmaz, S., Goksuluk, D., and Zararsiz, G. (2014) MVN: An R package for assessing multivariate normality. The R Journal, 6, 151-162. 
