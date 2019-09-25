@@ -53,12 +53,12 @@ Chi-Hsuan Ho and Yu-Jyun Huang (National Taiwan University), September 20, 2019.
 ## Citation
 To cite `prop.reject()` in publications, use: 
 
-Chi-Hsuan Ho, Yu-Jyun Huang, & Chuhsing Kate Hsiao. (2019) The misuse of normality assumption in gene-set analysis. Submitted.
+Chi-Hsuan Ho, Yu-Jyun Huang, & Chuhsing Kate Hsiao. (2019) *The misuse of normality assumption in gene-set analysis.* Submitted.
 
 ## References
-Korkmaz, S., Goksuluk, D., and Zararsiz, G. (2014) MVN: An R package for assessing multivariate normality. The R Journal, 6, 151-162. 
+Korkmaz, S., Goksuluk, D., and Zararsiz, G. (2014) *MVN: An R package for assessing multivariate normality.* The R Journal, 6, 151-162. 
 
-Székely, G. J. and Rizzo, M. L. (2013) Energy statistics: a class of statistics based on distances. Journal of Statistical Planning and Inference, 143, 1249-1272.
+Székely, G. J. and Rizzo, M. L. (2013) *Energy statistics: a class of statistics based on distances.* Journal of Statistical Planning and Inference, 143, 1249-1272.
 
 ## Examples
 ```r
