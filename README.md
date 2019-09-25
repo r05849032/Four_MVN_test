@@ -12,12 +12,12 @@ Install older package versions by using the `devtools` package.
 ```r
 library(devtools)
 ```
-Install MVN package from CRAN:
+Install the *MVN* package from CRAN:
 ```r
 install_version("MVN", version = "5.0", 
     repos = "http://cran.us.r-project.org")
 ```
-Install energy package from CRAN:
+Install the *energy* package from CRAN:
 ```r
 install_version("energy", version = "1.7-2", 
     repos = "http://cran.us.r-project.org")
