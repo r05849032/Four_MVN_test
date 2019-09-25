@@ -34,9 +34,9 @@ prop.reject(InputData, gene.no = 4, replicate.no = 100,
 | :-------- | :---------- |
 | `InputData` | The original *I* x *J* data matrix, where *I* is the number of samples and *J* is the number of genes. |
 | `gene.no` | The number of genes that will be randomly selected to form a set  for multivariate normality test. The default is 4. |
-| `replicate.no` | The number of replications. In each replication, a number of  “gene.no” genes will be randomly selected for the normality test. The default is 100. |
+| `replicate.no` | The number of replications. In each replication, a number of  `gene.no` genes will be randomly selected for the normality test. The default is 100. |
 | `significance.level` | The significance level. The default is 0.05. |
-| `random.seed` | The seed used when randomly select “gene.no” genes. The default  is 20190717. |
+| `random.seed` | The seed used when randomly select `gene.no` genes. The default  is 20190717. |
 
 
 ## Value
