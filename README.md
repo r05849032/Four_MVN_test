@@ -28,11 +28,6 @@ install_version("energy", version = "1.7-2",
 Prop.reject(InputData, gene.no = 4, replicate.no = 100, 
     significance.level = 0.05, random.seed = 20190717) 
 ```
-<style>
-table, th, td {
-  background: white;
-}
-</style>
 
 ## Arguments
 | Name      | Description |
