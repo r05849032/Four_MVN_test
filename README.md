@@ -82,7 +82,7 @@ dim(Data)
 ## [1]  30 100
 
 
-# Test the normality by using the four multivariate tests.
+# Test the normality with the four multivariate tests.
 output = Prop.reject(Data, gene.no = 4, replicate.no = 10, significance.level = 0.05)
 output
 ## $P.value
