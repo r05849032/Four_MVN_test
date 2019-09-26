@@ -13,7 +13,7 @@ library(energy)
 ## The data cantains 30 rows and 100 columns
 ## The row variables represents samples
 ## The column variables represents genes/probes
-load("ExampleData.RData")
+load("../data/ExampleData.RData")
 head(Data[,1:6])
 dim(Data)
 #############################
