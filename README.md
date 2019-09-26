@@ -3,7 +3,7 @@
 [![MVN_Package_Badge](https://img.shields.io/badge/MVN-5.0-brightgreen.svg)](https://www.rdocumentation.org/packages/MVN/versions/5.1)  [![energy_Package_Badge](https://img.shields.io/badge/energy-1.7--2-brightgreen)](https://www.rdocumentation.org/packages/energy/versions/1.7-2) [![R_Version_Badge](https://img.shields.io/badge/R%20-3.4.3-orange)](https://cran.r-project.org/bin/windows/base/old/3.4.3/) [![Code_Size_Badge](https://img.shields.io/github/languages/code-size/r05849032/NTU_submit.paper.svg)](https://github.com/r05849032/NTU_submit.paper)
 
 ## Description
-`Prop.reject()` calculates the proportion of rejection when testing the multivariate normality distributional assumption based on the Energy, Henze-Zirkler (HZ), Royston, and Mardia test. The Energy test is conducted with the function *mvnorm.etest* in the R package *energy* (Székely and Rizzo, 2013). The other three tests are conducted with the function *mvn* in the R package *MVN* (Korkmaz et al., 2014). 
+`Prop.reject()` calculates the proportion of rejection when testing the multivariate normality distributional assumption based on the Energy, Henze-Zirkler (HZ), Royston, and Mardia test. The Energy test is conducted with the function `mvnorm.etest()` in the R package *energy* (Székely and Rizzo, 2013). The other three tests are conducted with the function `mvn()` in the R package *MVN* (Korkmaz et al., 2014). 
 
 ## Preinstallation
 To use `Prop.reject()` for testing the normality, the *MVN* and *energy* package with specific version should be installed beforehand.
