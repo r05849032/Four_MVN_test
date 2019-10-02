@@ -1,26 +1,33 @@
 # Proportion of Rrejection under Four Multivariate Normality Tests
 
-[![MVN_Package_Badge](https://img.shields.io/badge/MVN-5.0-brightgreen.svg)](https://www.rdocumentation.org/packages/MVN/versions/5.1)  [![energy_Package_Badge](https://img.shields.io/badge/energy-1.7--2-brightgreen)](https://www.rdocumentation.org/packages/energy/versions/1.7-2) [![R_Version_Badge](https://img.shields.io/badge/R%20-3.4.3-orange)](https://cran.r-project.org/bin/windows/base/old/3.4.3/) [![Code_Size_Badge](https://img.shields.io/github/languages/code-size/r05849032/NTU_submit.paper.svg)](https://github.com/r05849032/NTU_submit.paper)
+[![MVN_Package_Badge](https://img.shields.io/badge/MVN-5.0-brightgreen.svg)](https://www.rdocumentation.org/packages/MVN/versions/5.1)  [![energy_Package_Badge](https://img.shields.io/badge/energy-1.7--2-brightgreen)](https://www.rdocumentation.org/packages/energy/versions/1.7-2) [![R_Version_Badge](https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/r-hub/rversions.app/master/r-release-win.json&label=R&query=$[0].version&colorB=orange)](https://cran.csie.ntu.edu.tw/bin/windows/base/) [![Code_Size_Badge](https://img.shields.io/github/languages/code-size/r05849032/NTU_submit.paper.svg)](https://github.com/r05849032/NTU_submit.paper)
 
 ## Description
 `Prop.reject()` calculates the proportion of rejection when testing the multivariate normality distributional assumption based on the Energy, Henze-Zirkler (HZ), Royston, and Mardia test. The Energy test is conducted with the function `mvnorm.etest()` in the R package *energy* (Székely and Rizzo, 2013). The other three tests are conducted with the function `mvn()` in the R package *MVN* (Korkmaz et al., 2014). 
 
 ## Preinstallation
-To use `Prop.reject()` for testing the normality, the *MVN* and *energy* package with specific version should be installed beforehand.
+To use `Prop.reject()` for testing the normality, the   *energy* and *MVN* package with specific version should be installed beforehand.
 
-Install older package versions by using the *devtools* package.
+Install older package versions by using the *devtools* package, and load it into the current session.
 ```r
+install.packages("devtools")
 library(devtools)
 ```
-Install the *MVN* package from CRAN:
+Install the *nloptr* package, which is a subpackage used in the *MVN* package.
 ```r
-install_version("MVN", version = "5.0", 
-    repos = "http://cran.us.r-project.org")
+install.packages("nloptr")
 ```
 Install the *energy* package from CRAN:
+> ⚠️ **Warning**: During the installation of the *energy* package, it's recommended to install Rtools 3.5.
 ```r
 install_version("energy", version = "1.7-2", 
-    repos = "http://cran.us.r-project.org")
+    repos = "http://cran.us.r-project.org", dependencies = TRUE, INSTALL_opts = c('--no-lock'))
+```
+Install the *MVN* package from CRAN:
+> ⚠️ **Warning**: To execute the program normally, during the installation of the *MVN* package, it's not recommended to update any package to the latest version.
+```r
+install_version("MVN", version = "5.0", 
+    repos = "http://cran.us.r-project.org", dependencies = TRUE, INSTALL_opts = c('--no-lock'))
 ```
 
 ## Usage
@@ -53,7 +60,7 @@ Chi-Hsuan Ho and Yu-Jyun Huang (National Taiwan University), September 20, 2019.
 ## Citation
 To cite `Prop.reject()` in publications, use: 
 
-Chi-Hsuan Ho, Yu-Jyun Huang, & Chuhsing Kate Hsiao. (2019) The misuse of normality assumption in gene-set analysis. Submitted.
+Chi-Hsuan Ho, Yu-Jyun Huang, & Chuhsing Kate Hsiao. (2019) Misuse of the normality assumption in gene-set analysis. Submitted.
 
 ## References
 Korkmaz, S., Goksuluk, D., and Zararsiz, G. (2014) MVN: An R package for assessing multivariate normality. *The R Journal*, 6, 151-162. 

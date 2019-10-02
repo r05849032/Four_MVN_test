@@ -3,11 +3,19 @@
 ## To use prop.reject() for testing the normality, the MVN and energy package with specific version should be installed beforehand.
 
 #############################
+## install.packages("devtools")
 ## library(devtools)
-## install_version("MVN", version = "5.0", 
-##                 repos = "http://cran.us.r-project.org")
+## 
+## install.packages("nloptr")
+## 
 ## install_version("energy", version = "1.7-2", 
-##                 repos = "http://cran.us.r-project.org")
+##                 repos = "http://cran.us.r-project.org", 
+##                 dependencies=TRUE, INSTALL_opts = c('--no-lock'))
+## 
+## install_version("MVN", version = "5.0", 
+##                 repos = "http://cran.us.r-project.org", 
+##                 dependencies=TRUE, INSTALL_opts = c('--no-lock'))
+
 library(MVN)
 library(energy)
 #############################
