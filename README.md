@@ -21,13 +21,15 @@ Install the *energy* package from CRAN:
 > ⚠ **Warning**: During the installation of the *energy* package, it is recommended to install Rtools 3.5.
 ```r
 install_version("energy", version = "1.7-2", 
-    repos = "http://cran.us.r-project.org", dependencies = TRUE, INSTALL_opts = c('--no-lock'))
+    repos = "http://cran.us.r-project.org", 
+    dependencies = TRUE, INSTALL_opts = c('--no-lock'))
 ```
 Install the *MVN* package from CRAN:
 > ⚠ **Warning**: To execute the program normally, during the installation of the *MVN* package, it is not recommended to update any package to the latest version.
 ```r
 install_version("MVN", version = "5.0", 
-    repos = "http://cran.us.r-project.org", dependencies = TRUE, INSTALL_opts = c('--no-lock'))
+    repos = "http://cran.us.r-project.org", 
+    dependencies = TRUE, INSTALL_opts = c('--no-lock'))
 ```
 
 ## Usage
